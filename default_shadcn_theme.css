@@ -1,39 +1,21 @@
-/* 1. Impor Font dari Google Fonts HARUS PALING ATAS */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap');
-
-/* 2. Baru Tailwind dan Source-nya */
-@import "tailwindcss";
-@source '../**/*.{js,ts,jsx,tsx}';
-
-@import 'tw-animate-css'; 
-
-:root {
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans: 'Poppins', system-ui, sans-serif;
-}
-
-body {
-  font-family: var(--font-sans);
-}
-
-@custom-variant dark (&:is(.dark *));
+/* KEEP_IN_SYNC(fullscreen/resources/figmake/shadcn/globals.css) */
 
 :root {
   --font-size: 16px;
   --background: #ffffff;
-  --foreground: #1A1A1A;
+  --foreground: oklch(0.145 0 0);
   --card: #ffffff;
-  --card-foreground: #1A1A1A;
-  --popover: #ffffff;
-  --popover-foreground: #1A1A1A;
-  --primary: #1A1A1A;
-  --primary-foreground: #ffffff;
-  --secondary: #F8E8FF;
-  --secondary-foreground: #1A1A1A;
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: #030213;
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.95 0.0058 264.53);
+  --secondary-foreground: #030213;
   --muted: #ececf0;
   --muted-foreground: #717182;
-  --accent: #D9C2FF;
-  --accent-foreground: #1A1A1A;
+  --accent: #e9ebef;
+  --accent-foreground: #030213;
   --destructive: #d4183d;
   --destructive-foreground: #ffffff;
   --border: rgba(0, 0, 0, 0.1);
@@ -42,13 +24,13 @@ body {
   --switch-background: #cbced4;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
-  --ring: #D9C2FF;
+  --ring: oklch(0.708 0 0);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 1rem;
+  --radius: 0.625rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: #030213;
@@ -57,27 +39,6 @@ body {
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-
-  /* Photobox Custom Colors */
-  --lavender: #D9C2FF;
-  --lavender-light: #F8E8FF;
-  --pink: #FFB6C1;
-  --pink-light: #FFE4E9;
-  --neon-purple: #C77DFF;
-  --neon-pink: #FF6EC7;
-
-  /* SnapStrip Luxury Palette */
-  --gold: #D4AF37;
-  --gold-light: #F0C060;
-  --gold-dark: #8B6914;
-  --maroon: #8B0000;
-  --burgundy: #722F37;
-  --velvet-red: #6B0A0A;
-  --dark-wood: #3D1F0A;
-  --walnut: #2C1506;
-  --cream: #FFFDF5;
-  --warm-cream: #F5ECD7;
-  --ink: #0D0505;
 }
 
 .dark {
@@ -156,38 +117,4 @@ body {
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-
-  /* Menambahkan Custom Color Photobox ke sistem Tailwind agar bisa dipakai dengan text-lavender, bg-gold, dll */
-  --color-lavender: var(--lavender);
-  --color-lavender-light: var(--lavender-light);
-  --color-pink: var(--pink);
-  --color-pink-light: var(--pink-light);
-  --color-neon-purple: var(--neon-purple);
-  --color-neon-pink: var(--neon-pink);
-  --color-gold: var(--gold);
-  --color-maroon: var(--maroon);
-}
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-
-  body {
-    @apply bg-background text-foreground;
-  }
-
-  html {
-    font-size: var(--font-size);
-  }
-
-  h1, h2, h3, h4, label, button {
-    font-weight: var(--font-weight-medium);
-    line-height: 1.5;
-  }
-
-  input {
-    font-weight: var(--font-weight-normal);
-    line-height: 1.5;
-  }
 }
