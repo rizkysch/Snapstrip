@@ -1,4 +1,4 @@
-```markdown
+
 # 📸 SnapStrip - Premium Digital Photo Booth
 
 SnapStrip adalah aplikasi *web-based photobooth* premium yang dirancang untuk mereplikasi pengalaman bilik foto fisik secara instan di dalam peramban. Proyek ini dikembangkan untuk memenuhi tugas **Daily Project 7** pada mata kuliah **Rekayasa Kebutuhan D**.
