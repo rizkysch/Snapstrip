@@ -73,4 +73,4 @@ Pengujian dilakukan berdasarkan skenario desain yang telah ditentukan pada Daily
 
 ---
 © 2026 SnapStrip — Premium Digital Photo Booth
-```
+
